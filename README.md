@@ -7,7 +7,7 @@ Due to its high speed and low latency, DVS is frequently employed in motion debl
 
 ## Method
 <img width="1014" alt="pipeline2" src="https://github.com/user-attachments/assets/9109deac-8fa6-4931-8dcd-0828a77d2844">
-The event degradation process and the pipeline of RDNet. The red region (1) above illustrates the event degradation process for constructing paired data of undegraded $E_{u}$ and degraded events $E_{d}$. (a) illustrates how threshold bias introduces differences in events. (b) represents how limited bandwidth leads to event loss. (c) provides visualization of simulated circuit noise. The yellow region (2) below is the first-stage event restoration. Degraded events $E_{d}$ and blurry image $I_{b}$ are fed into dual-branch encoders, and a single-branch event decoder generates the restored event $E_{r}$. The ground-truth is undegraded event $E_{u}$, and the loss is $L_{er}$. The green region (3) below is the second-stage event-based deblurring. Restored event $E_{r}$ and blurry image $I_{b}$ are fed into dual-branch encoders, and a single-branch image decoder generates the deblurred image $I_{d}$. The ground-truth is sharp images $I_{s}$, and the loss is $L_{d}$.
+The event degradation process and the pipeline of RDNet. The red region (1) above illustrates the event degradation process for constructing paired data of undegraded E<sub>u</sub> and degraded events E<sub>d</sub>. (a) illustrates how threshold bias introduces differences in events. (b) represents how limited bandwidth leads to event loss. (c) provides visualization of simulated circuit noise. The yellow region (2) below is the first-stage event restoration. Degraded events E<sub>d</sub> and blurry image I<sub>b</sub> are fed into dual-branch encoders, and a single-branch event decoder generates the restored event E<sub>r</sub>. The ground-truth is undegraded event E<sub>u</sub>, and the loss is L<sub>er</sub>. The green region (3) below is the second-stage event-based deblurring. Restored event E<sub>r</sub> and blurry image I<sub>b</sub> are fed into dual-branch encoders, and a single-branch image decoder generates the deblurred image I<sub>d</sub>. The ground-truth is sharp images I<sub>s</sub>, and the loss is L<sub>d</sub>.
 
 ## DavisMCR 
 
@@ -38,3 +38,5 @@ The columns display images and events captured under different ambient brightnes
   - [root] 
       - [lux300_40ms] (Lux=300, exposure time=40ms)
           - dvSave-2023_11_08_15_37_18.aedat4
+            
+**Note:** To parse the raw (.aedat4) files, you can download the data to the ./data directory and then use the provided tools ([1_parse_aedat.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/1_parse_aedat.py), [2_gen_event.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/2_gen_event.py), [3_visualize_event.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/3_visualize_event.py)) for data parsing and event visualization.
