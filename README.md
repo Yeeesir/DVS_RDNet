@@ -1,1 +1,8 @@
-# DVS_RDNet
+# Restoring Real-World Degraded Events Improves Deblurring Quality (ACMMM2024)
+
+![fig1](https://github.com/user-attachments/assets/81688844-aa08-4e22-9b10-2ddeff0a31b6)
+
+## Abstract
+Due to its high speed and low latency, DVS is frequently employed in motion deblurring. Ideally, high-quality events would adeptly capture intricate motion information. However, real-world events are generally degraded, thereby introducing significant artifacts into the deblurred results. In response to this challenge, we model the degradation of events and propose RDNet to improve the quality of image deblurring. Specifically, we first analyze the mechanisms underlying degradation and simulate paired events based on that. These paired events are then fed into the first stage of the RDNet for training the restoration model. The events restored in this stage serve as a guide for the second-stage deblurring process. To better assess the deblurring performance of different methods on real-world degraded events, we present a new real-world dataset named DavisMCR. This dataset incorporates events with diverse degradation levels, collected by manipulating environmental brightness and target object contrast. Our experiments are conducted on synthetic datasets (GOPRO), real-world datasets (REBlur), and the proposed dataset (DavisMCR). The results demonstrate that RDNet outperforms classical event denoising methods in event restoration. Furthermore, RDNet exhibits better performance in deblurring tasks compared to state-of-the-art methods. DavisMCR are available at \url{https://github.com/Yeeesir/DVS_RDNet.git}.
+
+## DavisMCR 
