@@ -10,7 +10,8 @@ Due to its high speed and low latency, DVS is frequently employed in motion debl
 The event degradation process and the pipeline of RDNet. The red region (1) above illustrates the event degradation process for constructing paired data of undegraded $E_{u}$ and degraded events $E_{d}$. (a) illustrates how threshold bias introduces differences in events. (b) represents how limited bandwidth leads to event loss. (c) provides visualization of simulated circuit noise. The yellow region (2) below is the first-stage event restoration. Degraded events $E_{d}$ and blurry image $I_{b}$ are fed into dual-branch encoders, and a single-branch event decoder generates the restored event $E_{r}$. The ground-truth is undegraded event $E_{u}$, and the loss is $L_{er}$. The green region (3) below is the second-stage event-based deblurring. Restored event $E_{r}$ and blurry image $I_{b}$ are fed into dual-branch encoders, and a single-branch image decoder generates the deblurred image $I_{d}$. The ground-truth is sharp images $I_{s}$, and the loss is $L_{d}$.
 
 ## DavisMCR 
-![dataset_details](https://github.com/user-attachments/assets/432ec84e-3f0a-40a0-aed2-8d85c5689b43)
+
+<img src="https://github.com/user-attachments/assets/432ec84e-3f0a-40a0-aed2-8d85c5689b43" alt="dataset_details" width="500">
 
 The innovation of DavisMCR dataset. 
 (a) represents the control group, capturing a normal contrast text motion scene under the illumination of lux=800. The events exhibit clear textures with minimal noise.
@@ -19,7 +20,9 @@ The innovation of DavisMCR dataset.
 (d) presents a text motion scene with a dark background, showing events with severe background noise.
 (e) illustrates a natural scene with events containing diverse forms and various intensity levels.
 
-![dataset_all](https://github.com/user-attachments/assets/4147020e-a61f-4376-9900-7d27fbcd88ed)
+
+<img src="https://github.com/user-attachments/assets/4147020e-a61f-4376-9900-7d27fbcd88ed" alt="dataset_all" width="700">
+
 The columns display images and events captured under different ambient brightness conditions. Distinct ambient brightness levels are typically associated with varying signal-to-noise ratios. APS1 and APS2 represent bright and dark background brightness, respectively. DVS2 captured against a dark background exhibits more noise than DVS1. Objects in different rows within each image have different contrasts. The events in areas with strong contrast are dense and clear.
 
 ### Download
