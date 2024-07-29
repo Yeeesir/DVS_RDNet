@@ -40,3 +40,17 @@ The columns display images and events captured under different ambient brightnes
           - dvSave-2023_11_08_15_37_18.aedat4
             
 **Note:** To parse the raw (.aedat4) files, you can download the data to the ./data directory and then use the provided tools ([1_parse_aedat.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/1_parse_aedat.py), [2_gen_event.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/2_gen_event.py), [3_visualize_event.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/3_visualize_event.py)) for data parsing and event visualization.
+
+
+## Citation
+You can use the following BibTeX entry to cite our paper:
+```
+@inproceedings{
+shen2024restoring,
+title={Restoring Real-World Degraded Events Improves Deblurring Quality},
+author={Yeqing Shen and Shang Li and Kun Song},
+booktitle={ACM Multimedia 2024},
+year={2024},
+url={https://openreview.net/forum?id=TvsocONzcC}
+}
+```
