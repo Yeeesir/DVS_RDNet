@@ -39,6 +39,7 @@ The columns display images and events captured under different ambient brightnes
       - [lux300_40ms] (Lux=300, exposure time=40ms)
           - dvSave-2023_11_08_15_37_18.aedat4
             
+
 **Note:** To parse the raw (.aedat4) files, you can download the data to the ./data directory and then use the provided tools ([1_parse_aedat.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/1_parse_aedat.py), [2_gen_event.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/2_gen_event.py), [3_visualize_event.py](https://github.com/Yeeesir/DVS_RDNet/blob/main/3_visualize_event.py)) for data parsing and event visualization.
 
 
